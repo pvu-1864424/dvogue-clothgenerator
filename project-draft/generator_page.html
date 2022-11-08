@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="This is the page that display item and cloth to user for choosing based on user input">
+  <!-- This stylesheet will "normalize" the styling across browsers -->
+  <link rel="icon" type="image/png" href="../public/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/new.css">
+  <title>Outfit Generator</title>
+</head>
+
+<body>
+  <section class="navbar">
+    <nav>
+      <header>
+        <h1 ><a class="logo" href="./new_homepage.html">Dvogue</a></h1>
+      </header>
+      <ul class="navlink" id="navlink">
+        <li><a href="./my_closet.html" class="navl">My Closet</a></li>
+        <li>
+        <div class="nav-dropdown">
+          <button class="dropbutton">Cloth Generator 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="nav-dropdown-content">
+            <a href="./generator_page.html" class="navl">Outfit Generator</a>
+            <a href="./ItemGenerator.html" class="navl">Item Generator</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="./blog.html" class="navl">Blog</a></li>
+        <li><a href="./about_page.html" class="navl">About us</a></li>
+        <li><a class="login" href="./login.html"><i class="fa fa-fw fa-user"></i></i>Login</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </section>
+
+  <main>
+    <header class="subpage-title"><h1>GENERATING OUTFIT</h1></header>
+    <div class='Container'>
+      <div class='generator'>
+        <form>
+          <label for="q1">HOW IS THE WEATHER TODAY?</label>
+          <div id='choice'>
+              <select name="weather" id="weather">
+                  <option value="none" selected disabled hidden>Select an option</option>
+                  <option value="Sunny">Sunny</option>
+                  <option value="Windy">Windy</option>
+                  <option value="Rainy">Rainy</option>
+                  <option value="Humid">Humid</option>
+                  <option value="Frigid">Frigid</option>
+                  <option value="Snowy">Snowy</option>
+              </select>
+          </div>
+      
+          <label for="q2">YOU ARE GOING TO BE:</label>
+          <div>
+              <select name="in-out" id="in-out">
+                  <option value="none" selected disabled hidden>Select an option</option>
+                  <option value="Indoor">Indoor</option>
+                  <option value="Outdoor">Outdoor</option>
+              </select>
+          </div>
+      
+          <label for="q3">WHAT OCCASION ARE YOU GOING TO?</label>
+          <div>
+              <select name="occasion" id="occasion">
+                  <option value="none" selected disabled hidden>Select an option</option>
+                  <option value="DATE">Date</option>
+                  <option value="CAUSAL">Causal</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Sport">Sport</option>
+                  <option value="Business Meeting">Business</option>
+              </select>
+          </div>
+      
+          <label for="q4">WHAT ARE YOU DOING TODAY?</label>
+          <div>
+              <select name="activity" id="activity">
+                  <option value="none" selected disabled hidden>Select an option</option>
+                  <option value="Movie">Movie</option>
+                  <option value="Picnic">Picnic</option>
+                  <option value="Work">Work</option>
+                  <option value="Biking">Biking</option>
+                  <option value="Hiking">Hiking</option>
+              </select>
+          </div>
+      
+          <div id='choice'>
+              <label for="budget" id="BUDGET_input">BUDGET:$</label>
+              <input type="BUDGET" id="BUDGET_input" name="BUDGET" placeholder="0 - 10,000"></input>
+          </div>
+      
+          <div class="output">
+              <button class="Generator" type="button">
+                  GENERATE
+              </button>
+          </div> 
+      </form>
+      </div>
+
+
+      <div class="generated-cloth">
+        <div class="cloth">
+          <img src="img/shirt.png" alt="image of the shirt">
+          <h1>ESSENTIALS</h1>
+          <h2>Black Relaxed Crewneck Sweatshirt</h2>
+          <p>$80</p>
+          <button class="save-to-closet" type="button"> SAVE TO CLOSET </button>
+        </div>
+        <div class="cloth">
+          <img src="img/pant.png" alt="image of the pants">
+          <h1>RAG & BONE</h1>
+          <h2>Blue Fit 2 Jeans</h2>
+          <p class="second">$195</p>
+          <button class="save-to-closet" type="button"> SAVE TO CLOSET </button>
+        </div>
+        <div class="cloth">
+          <img src="img/shoes.png" alt="image of the shoes">
+          <h1>AXEL ARIGATO</h1>
+          <h2>White & Grey Clean 90 Sneakers</h2>
+          <p>$225</p>
+          <button class="save-to-closet" type="button"> SAVE TO CLOSET </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+  
+    <ul class="footer1">
+
+      <li class="footeritem">
+        <h2 class="title">Home</h2>
+      </li>
+  
+      <li class="footeritem">
+        <h2 class="title">Cloth generator</h2>
+        <ul class="footerul">
+          <li>
+            <a href="#">Generate full outfit</a>
+          </li>
+          <li>
+            <a href="#">Generate items</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="footeritem">
+        <h2 class="title">Blogs</h2>
+      </li>
+  
+      <li class="footeritem">
+        <h2 class="title">About</h2>
+        <ul class="footerul">
+          <li>
+            <a href="#">About the web</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="footeritem">
+        <h2 class="title">Social</h2>
+  
+        <ul class="footerul">
+          <li>
+            <a href="#">Our instagram</a>
+          </li>
+  
+          <li>
+            <a href="#">Our Facebook</a>
+          </li>
+  
+          <li>
+            <a href="#">Our twitter</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <div class="contact">
+      <h2>Contact Us:</h2>
+      <li>
+        <a href="info@dvougue.com">Contact us via email</a>
+      </li>
+      <li>
+        <a href="tel:543-126-8970">Contact us via phone</a>
+      </li>
+    </div>
+  
+    <div class="groupmember">
+      <p>&copy; powered by Iris Ding, Frank Lin, Jiali Liu, Phuong Vu.</p>
+    </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
