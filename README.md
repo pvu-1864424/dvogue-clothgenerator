@@ -17,5 +17,3 @@ Checkout our website: [**Dvogue**](https://dvogue-a1779.web.app/)
 | Phuong Vu  | pvu@uw.edu|
 | Tzuyang Lin(Frank) | lin528@uw.edu |
 <br />
-
-*Copyrights: This project is a project for INFO340: Client-side development course. If you have any questions or feedback regarding this website or project, please let us know at [Phuong's email](mailto:prokhanhphuong@gmail.com)* 
